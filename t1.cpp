@@ -8,5 +8,5 @@ int main()
 	std::cout << "a = " << a << ", b = " << b << std::endl;
 	swap(&a, &b); // Âûçîâ ôóíêöèè ñ èñïîëüçîâàíèåì àäðåñîâ ôàêòè÷åñêèõ ïåðåìåííûõ
 	std::cout << "a = " << a << ", b = " << b << std::endl;
-	return 0;
+	return 0; 
 }
