@@ -1,19 +1,19 @@
 #include "t10.h"
 int main()
-{
+{	//задаются два массива
 	double arr[] = {8.9, 5.6, 0.1, 3.5, 7.3};
 	
 	
 	double arr2[] = { 1.2, 5.5, 7.9, 0.7};
 	
-	int n = sizeof(arr) / sizeof(arr[0]);
+	int n = sizeof(arr) / sizeof(arr[0]); //вычисляется размер массива
 	double max1 = 0;
 	int index1 = 0;
 	for (int i = 0; i < n; i++)
-	{
+	{	//поиск макситмального элемента
 		if (arr[i] > max1) {
 			max1 = arr[i];
-			index1 = i;
+			index1 = i; //индекс максимального элемента
 		}
 	}
 
@@ -29,6 +29,6 @@ int main()
 	}
 	
 	
-	 change(arr, arr2,  n, n2,  index1,  index2);
+	 change(arr, arr2,  n, n2,  index1,  index2); //вызов функции
 	return 0;
 }
