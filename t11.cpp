@@ -2,6 +2,7 @@
 int main() {
     const int n = 3;
     const int m = 5;
+    //задается матрица
     int array[3][5] =
     {
         {1,3,6,8,9},
@@ -9,7 +10,7 @@ int main() {
         {90, 67, 12, 77, 11}
     };
     for (int i = 0; i < n; i++)
-    {
+    { //происходит сдвиг столбцов на один вправо через объявление временной переменной
         int temp;
         for (int j = m - 1; j > 0; j--)
         {
@@ -22,7 +23,7 @@ int main() {
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < m; j++) 
-            std::cout << array[i][j] << " ";
+            std::cout << array[i][j] << " "; //вывод матрицы
             std::cout << std::endl;
         
     }
